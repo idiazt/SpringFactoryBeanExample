@@ -1,0 +1,14 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.springframework.org/schema/beans"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mailDev" class="com.cursospringavanzado.spring.factory.MailConfigFactory">
+        <property name="accountName" value="dev"/>
+        <property name="profile" value="dev"/>
+    </bean>
+    
+    <bean id="mailPro" class="com.cursospringavanzado.spring.factory.MailConfigFactory">
+        <property name="accountName" value="pro"/>
+        <property name="profile" value="pro"/>
+    </bean>
+</beans>
